@@ -76,13 +76,21 @@
     max-width: 1366px;
     margin: 0 auto;
     padding: 0 1rem;
+    margin-bottom: 1.5rem;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--blue-100);
+    }
 
     &--title {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid;
+      width: max-content;
     }
 
     &__content {
-      padding: 1rem;
+      padding: 1rem 2rem;
 
       &--card {
         max-width: 250px;
@@ -113,6 +121,52 @@
           justify-content: space-around;
           margin-bottom: 0.8rem;
         }
+      }
+    }
+  }
+
+  &__howToPlay {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 1rem;
+
+    &--title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid;
+      width: max-content;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--wrapper-step {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        background-color: var(--green-600);
+        padding: 2rem;
+        margin: 5px;
+      }
+
+      &--number-step {
+        font-size: 3rem;
+        color: var(--white);
+        user-select: none;
+        font-weight: 700;
+      }
+
+      &--info-step + &--info-step {
+        margin-top: 0.5rem;
+      }
+
+      &--info-step {
+        color: var(--white);
+        text-align: center;
+        user-select: none;
       }
     }
   }

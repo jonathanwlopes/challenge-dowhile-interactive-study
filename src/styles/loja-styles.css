@@ -14,6 +14,7 @@
   --grey-50: ##ececec;
   --grey-100: #e0e0e0;
   --grey-600: #626161;
+  --green-600: #006462;
 }
 
 @media (max-width: 1080px) {
@@ -196,12 +197,19 @@ a {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-.home__recentChallenges--title {
   margin-bottom: 1.5rem;
 }
+.home__recentChallenges .swiper-button-next,
+.home__recentChallenges .swiper-button-prev {
+  color: var(--blue-100);
+}
+.home__recentChallenges--title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+  width: max-content;
+}
 .home__recentChallenges__content {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .home__recentChallenges__content--card {
   max-width: 250px;
@@ -229,6 +237,45 @@ a {
   display: flex;
   justify-content: space-around;
   margin-bottom: 0.8rem;
+}
+.home__howToPlay {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 1rem;
+}
+.home__howToPlay--title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+  width: max-content;
+}
+.home__howToPlay__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home__howToPlay__content--wrapper-step {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  background-color: var(--green-600);
+  padding: 2rem;
+  margin: 5px;
+}
+.home__howToPlay__content--number-step {
+  font-size: 3rem;
+  color: var(--white);
+  user-select: none;
+  font-weight: 700;
+}
+.home__howToPlay__content--info-step + .home__howToPlay__content--info-step {
+  margin-top: 0.5rem;
+}
+.home__howToPlay__content--info-step {
+  color: var(--white);
+  text-align: center;
+  user-select: none;
 }
 
 @media (max-width: 1024px) {
