@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./styles/loja-styles.css" />
+    <link rel="stylesheet" href="./src/styles/loja-styles.css" />
 
     <title>Game Interativo</title>
   </head>
   <body>
     <div class="container">
-      <header class="header container-center">
+      <header class="header">
         <img class="header__logo" src="https://picsum.photos/300/60" alt="Logo" />
         <nav class="header__navigation">
           <ul class="header__listMenu">
@@ -38,10 +39,137 @@
             </div>
           </article>
           <article class="home__presentation--right">
-            <img class="home__presentation--right-image animate__animated animate__fadeInDown" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+            <img
+              class="home__presentation--right-image animate__animated animate__fadeInDown"
+              src="https://picsum.photos/500/500"
+              alt="Profissional Estudando"
+            />
           </article>
+        </section>
+
+        <section class="home__recentChallenges">
+          <h2 class="home__recentChallenges--title">Desafios Recentes</h2>
+          <div class="home__recentChallenges__content swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="home__recentChallenges__content--card">
+                  <img class="home__recentChallenges__content--card-image" src="https://picsum.photos/200/200" alt="Desenvolvedor" />
+                  <p class="home__recentChallenges__content--card-title">Desenvolva um site HTML em 30 minutos</p>
+                  <div class="home__recentChallenges__content--card-wrapperInfo">
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fas fa-users"></i>
+                      <span>4.5k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fab fa-youtube"></i>
+                      <span>25k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="far fa-star"></i>
+                      <span>1k</span>
+                    </div>
+                  </div>
+                  <button class="home__recentChallenges__content--card-button">Aceitar Desafio</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="home__recentChallenges__content--card">
+                  <img class="home__recentChallenges__content--card-image" src="https://picsum.photos/200/200" alt="Desenvolvedor" />
+                  <p class="home__recentChallenges__content--card-title">Crie uma interface amigável em 30 minutos</p>
+                  <div class="home__recentChallenges__content--card-wrapperInfo">
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fas fa-users"></i>
+                      <span>4.5k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fab fa-youtube"></i>
+                      <span>25k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="far fa-star"></i>
+                      <span>1k</span>
+                    </div>
+                  </div>
+                  <button class="home__recentChallenges__content--card-button">Aceitar Desafio</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="home__recentChallenges__content--card">
+                  <img class="home__recentChallenges__content--card-image" src="https://picsum.photos/200/200" alt="Desenvolvedor" />
+                  <p class="home__recentChallenges__content--card-title">Interaja com o entrevistador por 20 minutos</p>
+                  <div class="home__recentChallenges__content--card-wrapperInfo">
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fas fa-users"></i>
+                      <span>4.5k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fab fa-youtube"></i>
+                      <span>25k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="far fa-star"></i>
+                      <span>1k</span>
+                    </div>
+                  </div>
+                  <button class="home__recentChallenges__content--card-button">Aceitar Desafio</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="home__recentChallenges__content--card">
+                  <img class="home__recentChallenges__content--card-image" src="https://picsum.photos/200/200" alt="Desenvolvedor" />
+                  <p class="home__recentChallenges__content--card-title">Grave um audio lendo o texto em inglês, treinando a pronuncia</p>
+                  <div class="home__recentChallenges__content--card-wrapperInfo">
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fas fa-users"></i>
+                      <span>4.5k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fab fa-youtube"></i>
+                      <span>25k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="far fa-star"></i>
+                      <span>1k</span>
+                    </div>
+                  </div>
+                  <button class="home__recentChallenges__content--card-button">Aceitar Desafio</button>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="home__recentChallenges__content--card">
+                  <img class="home__recentChallenges__content--card-image" src="https://picsum.photos/200/200" alt="Desenvolvedor" />
+                  <p class="home__recentChallenges__content--card-title">Consultando o google de forma eficiente, me apresente a resposta</p>
+                  <div class="home__recentChallenges__content--card-wrapperInfo">
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fas fa-users"></i>
+                      <span>4.5k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="fab fa-youtube"></i>
+                      <span>25k</span>
+                    </div>
+                    <div class="home__recentChallenges__content--card-wrapperIcon">
+                      <i class="far fa-star"></i>
+                      <span>1k</span>
+                    </div>
+                  </div>
+                  <button class="home__recentChallenges__content--card-button">Aceitar Desafio</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
       </main>
     </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a899726fcb.js" crossorigin="anonymous"></script>
+    <script type="module" src="./src//modules/index.js"></script>
   </body>
 </html>
