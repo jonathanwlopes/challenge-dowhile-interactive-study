@@ -51,23 +51,11 @@
       }
     }
 
-    &--right {
-      position: relative;
+    &__right {
+      width: 50%;
 
-      &-image {
-        width: 100%;
-        max-height: 500px;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 30%;
-        height: 30%;
-        background: yellow;
-        left: -1rem;
-        bottom: 0;
+      &-image{
+        border-radius: .2rem;
       }
     }
   }

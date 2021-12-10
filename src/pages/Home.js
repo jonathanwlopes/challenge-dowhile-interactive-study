@@ -1,4 +1,4 @@
-import { ModalLogin } from "./ModalLogin/index.js"
+import { ModalLogin } from "../components/ModalLogin/index.js"
 
 export const Home = {
   init: () => {

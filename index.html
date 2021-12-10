@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./src/styles/loja-styles.css" />
+    <link rel="stylesheet" href="./src/styles/default.css" />
 
     <title>Game Interativo</title>
   </head>
@@ -45,12 +45,31 @@
               <button class="home__presentation--left-button">Compartilhar</button>
             </div>
           </article>
-          <article class="home__presentation--right">
-            <img
-              class="home__presentation--right-image animate__animated animate__fadeInDown"
-              src="https://picsum.photos/500/500"
-              alt="Profissional Estudando"
-            />
+          <article class="home__presentation__right">
+            <div class="home__presentation__right--content swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="home__presentation__right--content-banner">
+                    <h2 class="home__presentation__right--content-banner-title">Evolução...</h2>
+                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="home__presentation__right--content-banner">
+                    <h2 class="home__presentation__right--content-banner-title">Constância...</h2>
+                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="home__presentation__right--content-banner">
+                    <h2 class="home__presentation__right--content-banner-title">Interatividade...</h2>
+                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </article>
         </section>
 
@@ -203,6 +222,10 @@
             </div>
           </div>
         </section>
+
+        <section class="home__watch">
+          <h2>Vídeos</h2>
+        </section>
       </main>
     </div>
     <div class="modal"></div>
@@ -210,6 +233,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a899726fcb.js" crossorigin="anonymous"></script>
-    <script type="module" src="./src//modules/index.js"></script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>

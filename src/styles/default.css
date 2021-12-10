@@ -238,22 +238,11 @@ a {
 .home__presentation--left-button:hover {
   background-color: var(--blue-100-transparent);
 }
-.home__presentation--right {
-  position: relative;
+.home__presentation__right {
+  width: 50%;
 }
-.home__presentation--right-image {
-  width: 100%;
-  max-height: 500px;
-}
-.home__presentation--right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 30%;
-  height: 30%;
-  background: yellow;
-  left: -1rem;
-  bottom: 0;
+.home__presentation__right-image {
+  border-radius: 0.2rem;
 }
 .home__recentChallenges {
   max-width: 1366px;
@@ -359,4 +348,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=loja-styles.css.map */
+/*# sourceMappingURL=default.css.map */
