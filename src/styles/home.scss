@@ -177,9 +177,21 @@
     &__presentation {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 1.5rem;
 
       &--left {
         width: 100%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        &-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &__howToPlay {
+      &__content {
+        flex-direction: column;
       }
     }
   }

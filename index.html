@@ -13,9 +13,9 @@
 
     <title>Game Interativo</title>
   </head>
-  <body>
+  <body class="body__home">
     <div class="container">
-      <header class="header">
+      <header class="header desk">
         <img class="header__logo" src="https://picsum.photos/300/60" alt="Logo" />
         <nav class="header__navigation">
           <ul class="header__listMenu">
@@ -26,6 +26,12 @@
           </ul>
         </nav>
         <button class="header__login">Entrar / Registrar</button>
+      </header>
+
+      <header class="header mob">
+        <i class="fas fa-bars header--icon-menu"></i>
+        <img class="header__logo" src="https://picsum.photos/300/60" alt="Logo" />
+        <i class="fas fa-sign-in-alt header__login-mobile"></i>
       </header>
 
       <main class="home">
@@ -199,6 +205,7 @@
         </section>
       </main>
     </div>
+    <div class="modal"></div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

@@ -1,0 +1,26 @@
+.modal {
+  display: none;
+  
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black--transparent);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  &__login{
+    background-color: var(--white);
+    border: 1px solid;
+    padding: 2rem;
+
+    &--title {
+      color: var(--red);
+      text-align: center;
+    }
+  }
+}
