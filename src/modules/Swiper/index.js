@@ -2,6 +2,7 @@ export const newSwiper = (element) => {
   new Swiper(`.${element}`, {
     direction: "horizontal",
     spaceBetween: 30,
+    freeMode: true,
 
     breakpoints: {
       320: {
@@ -12,7 +13,11 @@ export const newSwiper = (element) => {
         slidesPerView: 2,
       },
 
-      640: {
+      768: {
+        slidesPerView: 3,
+      },
+
+      1024: {
         slidesPerView: 4,
       },
     },

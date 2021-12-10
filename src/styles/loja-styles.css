@@ -355,7 +355,7 @@ a {
     font-size: 1.5rem;
   }
   .home__howToPlay__content {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 

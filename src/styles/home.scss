@@ -191,7 +191,7 @@
     }
     &__howToPlay {
       &__content {
-        flex-direction: column;
+        flex-wrap: wrap;
       }
     }
   }
