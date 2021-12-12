@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -15,14 +15,14 @@
   </head>
   <body class="body__home">
     <div class="container">
-      <header class="header desk">
+      <header class="header desk sticky">
         <img class="header__logo" src="https://picsum.photos/300/60" alt="Logo" />
         <nav class="header__navigation">
           <ul class="header__listMenu">
-            <a href="#" class="header__listMenu--link"><li class="header__listMenu--item">Inicio</li></a>
-            <a href="#" class="header__listMenu--link"><li class="header__listMenu--item">Como Funciona</li></a>
-            <a href="#" class="header__listMenu--link"><li class="header__listMenu--item">Desafios</li></a>
-            <a href="#" class="header__listMenu--link"><li class="header__listMenu--item">Compartilhar</li></a>
+            <a href="#" class="header__listMenu--link link-home"><li class="header__listMenu--item">Inicio</li></a>
+            <a href="#" class="header__listMenu--link link-howToPlay"><li class="header__listMenu--item">Como Funciona</li></a>
+            <a href="#" class="header__listMenu--link link-challenges"><li class="header__listMenu--item">Desafios</li></a>
+            <a href="#" class="header__listMenu--link link-share"><li class="header__listMenu--item">Compartilhar</li></a>
           </ul>
         </nav>
         <button class="header__login">Entrar / Registrar</button>
@@ -45,32 +45,64 @@
               <button class="home__presentation--left-button">Compartilhar</button>
             </div>
           </article>
-          <article class="home__presentation__right">
-            <div class="home__presentation__right--content swiper">
+          <article class="home__presentation--right">
+            <div class="home__presentation--right--content swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="home__presentation__right--content-banner">
-                    <h2 class="home__presentation__right--content-banner-title">Evolução...</h2>
-                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  <div class="home__presentation--right--content-banner">
+                    <h2 class="home__presentation--right--content-banner-title">Evolução...</h2>
+                    <img class="home__presentation--right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="home__presentation__right--content-banner">
-                    <h2 class="home__presentation__right--content-banner-title">Constância...</h2>
-                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  <div class="home__presentation--right--content-banner">
+                    <h2 class="home__presentation--right--content-banner-title">Constância...</h2>
+                    <img class="home__presentation--right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="home__presentation__right--content-banner">
-                    <h2 class="home__presentation__right--content-banner-title">Interatividade...</h2>
-                    <img class="home__presentation__right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
+                  <div class="home__presentation--right--content-banner">
+                    <h2 class="home__presentation--right--content-banner-title">Interatividade...</h2>
+                    <img class="home__presentation--right-image" src="https://picsum.photos/500/500" alt="Profissional Estudando" />
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </article>
+        </section>
+
+        <section class="home__howToPlay">
+          <h2 class="home__howToPlay--title">Como Funciona</h2>
+          <div class="home__howToPlay__content">
+            <div class="home__howToPlay__content--wrapper-step">
+              <span class="home__howToPlay__content--number-step">01</span>
+              <p class="home__howToPlay__content--info-step">Aceite um Desafio</p>
+              <p class="home__howToPlay__content--info-step">
+                Aceite o desafio de um profissional, neste desafio você vai ter acesso a uma aula de 45 minutos, absorva o conteúdo para mandar bem no
+                exercício proposto.
+              </p>
+            </div>
+
+            <div class="home__howToPlay__content--wrapper-step">
+              <span class="home__howToPlay__content--number-step">02</span>
+              <p class="home__howToPlay__content--info-step">Entregue o Desafio</p>
+              <p class="home__howToPlay__content--info-step">
+                Após executar a tarefa você deve entregar o desafio para o instrutor, a cada desafio entregue você recebe pontos que te dão acesso a
+                novos desafios.
+              </p>
+            </div>
+
+            <div class="home__howToPlay__content--wrapper-step">
+              <span class="home__howToPlay__content--number-step">03</span>
+              <p class="home__howToPlay__content--info-step">Crie Desafios</p>
+              <p class="home__howToPlay__content--info-step">
+                Ajude a comunidade criando novos desafios, receba pontos extras por cada pessoa que concluir o seu desafio.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="home__recentChallenges">
@@ -192,41 +224,61 @@
           </div>
         </section>
 
-        <section class="home__howToPlay">
-          <h2 class="home__howToPlay--title">Como Funciona</h2>
-          <div class="home__howToPlay__content">
-            <div class="home__howToPlay__content--wrapper-step">
-              <span class="home__howToPlay__content--number-step">01</span>
-              <p class="home__howToPlay__content--info-step">Aceite um Desafio</p>
-              <p class="home__howToPlay__content--info-step">
-                Aceite o desafio de um profissional, neste desafio você vai ter acesso a uma aula de 45 minutos, absorva o conteúdo para mandar bem no
-                exercício proposto.
-              </p>
+        <section class="home__info-bar">
+          <div class="home__info-bar__content">
+            <div class="home__info-bar__content-wrapper">
+              <i class="fas fa-laptop-code home__info-bar__content-icon"></i>
+              <span class="home__info-bar__content-number">1100+</span>
+              <span class="home__info-bar__content-text">Desafios</span>
             </div>
 
-            <div class="home__howToPlay__content--wrapper-step">
-              <span class="home__howToPlay__content--number-step">02</span>
-              <p class="home__howToPlay__content--info-step">Entregue o Desafio</p>
-              <p class="home__howToPlay__content--info-step">
-                Após executar a tarefa você deve entregar o desafio para o instrutor, a cada desafio entregue você recebe pontos que te dão acesso a
-                novos desafios.
-              </p>
+            <div class="home__info-bar__content-wrapper">
+              <i class="fas fa-user-tie home__info-bar__content-icon"></i>
+              <span class="home__info-bar__content-number">10k</span>
+              <span class="home__info-bar__content-text">Profissionais</span>
             </div>
 
-            <div class="home__howToPlay__content--wrapper-step">
-              <span class="home__howToPlay__content--number-step">03</span>
-              <p class="home__howToPlay__content--info-step">Crie Desafios</p>
-              <p class="home__howToPlay__content--info-step">
-                Ajude a comunidade criando novos desafios, receba pontos extras por cada pessoa que concluir o seu desafio.
-              </p>
+            <div class="home__info-bar__content-wrapper">
+              <i class="fab fa-free-code-camp home__info-bar__content-icon"></i>
+              <span class="home__info-bar__content-number">500+</span>
+              <span class="home__info-bar__content-text">Oportunidades</span>
+            </div>
+
+            <div class="home__info-bar__content-wrapper">
+              <i class="far fa-comments home__info-bar__content-icon"></i>
+              <span class="home__info-bar__content-number">8000+</span>
+              <span class="home__info-bar__content-text">Conectividade</span>
             </div>
           </div>
         </section>
 
         <section class="home__watch">
-          <h2>Vídeos</h2>
+          <div class="home__watch__content">
+            <div class="home__watch__content--video">
+              <iframe
+                src="https://www.youtube.com/embed/qQlA3ov-R1g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="home__watch__content--right">
+              <h1 class="home__watch__content--title">Assista o vídeo de apresentação.</h1>
+              <p class="home__watch__content--text">
+                Apresentamos o Game Interativo, uma plataforma onde você ajuda profissionais de todas as áreas com o seu conhecimento, aqui você pode
+                absorver conteudos de outros profissionais que assim como você querem ajudar a comunidade, assista o vídeo de apresentação ao lado
+                para saber mais e iniciar seus estudos.
+              </p>
+              <button class="home__watch__content--button">Compartilhar</button>
+            </div>
+          </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <p>Copyright © 2021. Developed by <a href="https://www.linkedin.com/in/jonathanwlopes/" target="_blank">Jonathan Lopes.</a></p>
+      </footer>
     </div>
     <div class="modal"></div>
 

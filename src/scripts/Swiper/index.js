@@ -6,7 +6,7 @@ export const swiperChallenges = (element) => {
     spaceBetween: 30,
     freeMode: true,
     loop: true,
-    
+
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -38,15 +38,20 @@ export const swiperPresentation = (element) => {
     spaceBetween: 30,
     slidesPerView: 1,
 
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
     autoplay: {
       delay: 6000,
+      disableOnInteraction: false,
     },
   })
 
   swiper.on("slideChange", function (e) {
     const swiperActive = swiper.slides[e.activeIndex]
 
-    const $TEXT = swiperActive.querySelector(".home__presentation__right--content-banner-title")
+    const $TEXT = swiperActive.querySelector(".home__presentation--right--content-banner-title")
     animateCSS($TEXT, "lightSpeedInRight")
   })
 }

@@ -20,6 +20,9 @@
   --red: #dc143c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -97,6 +100,14 @@ a {
   text-align: center;
 }
 
+.footer {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid;
+}
+
 .header.desk {
   max-width: 1366px;
   margin: 0 auto;
@@ -107,7 +118,12 @@ a {
   height: 80px;
   max-height: 100px;
   border-bottom: 1px solid var(--grey-100);
-  margin-bottom: 2rem;
+}
+.header.sticky {
+  position: sticky;
+  top: 0px;
+  background: var(--white);
+  z-index: 5;
 }
 .header.mob {
   display: none;
@@ -197,7 +213,7 @@ a {
 .home__presentation {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: space-between;
   background-color: var(--grey-50);
@@ -233,22 +249,70 @@ a {
   border-radius: 0.2rem;
   color: var(--white);
   font-weight: 600;
-  transition: filter 0.2s;
+  transition: background-color 0.2s;
 }
 .home__presentation--left-button:hover {
   background-color: var(--blue-100-transparent);
 }
-.home__presentation__right {
+.home__presentation--right {
   width: 50%;
 }
-.home__presentation__right-image {
+.home__presentation--right .swiper-pagination {
+  background: var(--white);
+  border: 1px solid var(--black--transparent);
+  border-radius: 1rem;
+  padding: 0.2rem 0;
+}
+.home__presentation--right-image {
   border-radius: 0.2rem;
+  max-width: 100%;
+  height: auto;
+}
+.home__howToPlay {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+.home__howToPlay--title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+  width: max-content;
+}
+.home__howToPlay__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home__howToPlay__content--wrapper-step {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  background-color: var(--green-600);
+  padding: 2rem;
+  margin: 5px;
+}
+.home__howToPlay__content--number-step {
+  font-size: 3rem;
+  color: var(--white);
+  user-select: none;
+  font-weight: 700;
+}
+.home__howToPlay__content--info-step + .home__howToPlay__content--info-step {
+  margin-top: 0.5rem;
+}
+.home__howToPlay__content--info-step {
+  color: var(--white);
+  text-align: center;
+  user-select: none;
 }
 .home__recentChallenges {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 .home__recentChallenges .swiper-button-next,
 .home__recentChallenges .swiper-button-prev {
@@ -289,44 +353,77 @@ a {
   justify-content: space-around;
   margin-bottom: 0.8rem;
 }
-.home__howToPlay {
-  margin: 0 auto;
-  max-width: 1366px;
-  padding: 0 1rem;
-}
-.home__howToPlay--title {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid;
-  width: max-content;
-}
-.home__howToPlay__content {
+.home__info-bar {
+  background: rgba(0, 0, 0, 0.1) url("https://picsum.photos/1920/361");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5rem;
+  min-height: 361px;
+  max-height: 361px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.home__info-bar__content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  padding: 1rem 1.5rem;
+  display: flex;
   justify-content: space-between;
 }
-.home__howToPlay__content--wrapper-step {
-  height: 300px;
+.home__info-bar__content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
-  background-color: var(--green-600);
-  padding: 2rem;
-  margin: 5px;
-}
-.home__howToPlay__content--number-step {
-  font-size: 3rem;
   color: var(--white);
-  user-select: none;
   font-weight: 700;
+  font-size: 1.5rem;
 }
-.home__howToPlay__content--info-step + .home__howToPlay__content--info-step {
-  margin-top: 0.5rem;
+.home__info-bar__content-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
-.home__howToPlay__content--info-step {
+.home__watch {
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+.home__watch__content {
+  display: flex;
+  justify-content: space-between;
+}
+.home__watch__content--video {
+  width: 40%;
+  max-height: 320px;
+}
+.home__watch__content--video > iframe {
+  width: 100%;
+  height: 320px;
+}
+.home__watch__content--right {
+  width: 55%;
+}
+.home__watch__content--title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.home__watch__content--text {
+  margin-bottom: 1.5rem;
+}
+.home__watch__content--button {
+  border: none;
+  padding: 0.2rem 1rem;
+  background-color: var(--blue-100);
+  border-radius: 0.2rem;
   color: var(--white);
-  text-align: center;
-  user-select: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.home__watch__content--button:hover {
+  background-color: var(--blue-100-transparent);
 }
 
 @media (max-width: 1024px) {
@@ -343,8 +440,46 @@ a {
   .home__presentation--left-title {
     font-size: 1.5rem;
   }
+  .home__presentation--right {
+    width: 100%;
+  }
   .home__howToPlay__content {
     flex-wrap: wrap;
+  }
+  .home__info-bar {
+    background: rgba(0, 0, 0, 0.1) url(https://picsum.photos/768/500);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    max-height: 500px;
+  }
+  .home__info-bar__content {
+    align-items: center;
+    flex-direction: column;
+  }
+  .home__info-bar__content-wrapper + .home__info-bar__content-wrapper {
+    margin-top: 1rem;
+  }
+  .home__info-bar__content-wrapper {
+    flex-direction: row;
+  }
+  .home__info-bar__content-icon {
+    margin: unset;
+    margin-right: 1rem;
+  }
+  .home__info-bar__content-number {
+    margin-right: 1rem;
+  }
+  .home__watch__content {
+    flex-direction: column;
+  }
+  .home__watch__content--video {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .home__watch__content--right {
+    text-align: center;
+    width: 100%;
   }
 }
 

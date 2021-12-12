@@ -1,0 +1,332 @@
+.home {
+  &__presentation {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey-50);
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+
+      &-info-stamp {
+        align-self: flex-end;
+        border: 1px solid var(--grey-600);
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: filter 0.2s;
+        margin-bottom: 2rem;
+
+        &:hover {
+          filter: brightness(0.1);
+        }
+      }
+
+      &-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      &-subtitle {
+        margin-bottom: 1.5rem;
+      }
+
+      &-button {
+        border: none;
+        padding: 0.2rem 1rem;
+        background-color: var(--blue-100);
+        border-radius: 0.2rem;
+        color: var(--white);
+        font-weight: 600;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: var(--blue-100-transparent);
+        }
+      }
+    }
+
+    &--right {
+      width: 50%;
+
+      .swiper-pagination {
+        background: var(--white);
+        border: 1px solid var(--black--transparent);
+        border-radius: 1rem;
+        padding: .2rem 0;
+      }
+
+      &-image {
+        border-radius: 0.2rem;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__howToPlay {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+
+    &--title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid;
+      width: max-content;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &--wrapper-step {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        background-color: var(--green-600);
+        padding: 2rem;
+        margin: 5px;
+      }
+
+      &--number-step {
+        font-size: 3rem;
+        color: var(--white);
+        user-select: none;
+        font-weight: 700;
+      }
+
+      &--info-step + &--info-step {
+        margin-top: 0.5rem;
+      }
+
+      &--info-step {
+        color: var(--white);
+        text-align: center;
+        user-select: none;
+      }
+    }
+  }
+
+  &__recentChallenges {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--blue-100);
+    }
+
+    &--title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid;
+      width: max-content;
+    }
+
+    &__content {
+      padding: 1rem 2rem;
+
+      &--card {
+        max-width: 250px;
+        background: var(--white);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        padding: 0.5rem;
+
+        &-image {
+          margin-bottom: 0.5rem;
+        }
+
+        &-title {
+          font-size: 1rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        &-wrapperInfo {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+
+  &__info-bar {
+    background: rgba(0, 0, 0, 0.1) url("https://picsum.photos/1920/361");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5rem;
+    min-height: 361px;
+    max-height: 361px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1366px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      &-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__watch {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+      &--video {
+        width: 40%;
+        max-height: 320px;
+
+        & > iframe {
+          width: 100%;
+          height: 320px;
+        }
+      }
+
+      &--right {
+        width: 55%;
+      }
+
+      &--title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &--text {
+        margin-bottom: 1.5rem;
+      }
+
+      &--button {
+        border: none;
+        padding: 0.2rem 1rem;
+        background-color: var(--blue-100);
+        border-radius: 0.2rem;
+        color: var(--white);
+        font-weight: 600;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: var(--blue-100-transparent);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    &__presentation {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.5rem;
+
+      &--left {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        &-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      &--right {
+        width: 100%;
+      }
+    }
+
+    &__howToPlay {
+      &__content {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__info-bar {
+      background: rgba(0, 0, 0, 0.1) url(https://picsum.photos/768/500);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 500px;
+      max-height: 500px;
+
+      &__content {
+        align-items: center;
+        flex-direction: column;
+
+        &-wrapper + &-wrapper {
+          margin-top: 1rem;
+        }
+
+        &-wrapper {
+          flex-direction: row;
+        }
+
+        &-icon {
+          margin: unset;
+          margin-right: 1rem;
+        }
+
+        &-number {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &__watch {
+      &__content {
+        flex-direction: column;
+
+        &--video {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+
+        &--right {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

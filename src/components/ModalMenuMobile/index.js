@@ -1,12 +1,12 @@
 import { Element } from "../../utils/Element/index.js"
 
-export const ModalLogin = () => {
+export const ModalMenuMobile = () => {
   const $MODAL = document.querySelector(".modal")
   if (!$MODAL) return
 
   $MODAL.classList.add("active")
 
-  ModalLoginEvents($MODAL)
+  ModalMenuMobileEvents($MODAL)
 
   const _title = Element({
     elementType: "h2",
@@ -23,7 +23,7 @@ export const ModalLogin = () => {
   $MODAL.appendChild(_container)
 }
 
-const ModalLoginEvents = (element) => {
+const ModalMenuMobileEvents = (element) => {
   element.addEventListener("click", (e) => {
     if (e.target !== e.currentTarget) return
 
