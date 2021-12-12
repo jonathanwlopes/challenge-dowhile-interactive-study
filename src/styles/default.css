@@ -9,12 +9,13 @@
   --background: #e6f7ee;
   --yellow: #facc39;
   --blue-100: #a498e2;
-  --blue-100-transparent: #a498e2e6;
-  --blue: #796fe5;
+  --blue-100-transparent: #633bbce6;
+  --blue: #633bbc;
   --grey-50: ##ececec;
   --grey-100: #e0e0e0;
   --grey-600: #626161;
   --green-600: #006462;
+  --green-transparent: #006462e6;
   --black: #000000;
   --black--transparent: #0000001A;
   --red: #dc143c;
@@ -222,10 +223,13 @@ a {
   display: flex;
   flex-direction: column;
   width: 40%;
+  box-shadow: 0 25px 50px var(--black--transparent);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 .home__presentation--left-info-stamp {
   align-self: flex-end;
-  border: 1px solid var(--grey-600);
+  border-bottom: 1px solid var(--grey-600);
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: filter 0.2s;
@@ -352,6 +356,18 @@ a {
   display: flex;
   justify-content: space-around;
   margin-bottom: 0.8rem;
+}
+.home__recentChallenges__content--card-button {
+  border: none;
+  padding: 0.2rem 1rem;
+  background-color: var(--green-600);
+  border-radius: 0.2rem;
+  color: var(--white);
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.home__recentChallenges__content--card-button:hover {
+  background-color: var(--green-transparent);
 }
 .home__info-bar {
   background: rgba(0, 0, 0, 0.1) url("https://picsum.photos/1920/361");
